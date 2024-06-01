@@ -1,0 +1,29 @@
+{
+  "name": "feedz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "api",
+    "mysql",
+    "prisma",
+    "zod"
+  ],
+  "author": "Henrique Martins Alexandre, Vitor Pagani Vieira, Anderson do Carmo Ramos & Stéfany Isabelle",
+  "license": "MIT",
+  "description": "Backend of Feedz Project",
+  "devDependencies": {
+    "@types/module-alias": "^2.0.4",
+    "@types/node": "^20.13.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  }
+}
