@@ -21,10 +21,7 @@ module.exports = {
     {
       displayName: 'unit',
       testMatch: ['<rootDir>/test/unit/**/*.test.ts'],
-      collectCoverage: true,
       coverageDirectory: 'coverage/unit',
-      coverageProvider: 'v8',
-      coverageReporters: ['text', 'lcov'],
     },
     {
       displayName: 'integration',
@@ -36,9 +33,7 @@ module.exports = {
       displayName: 'e2e',
       testMatch: ['<rootDir>/test/e2e/**/*.test.ts'],
       maxWorkers: 1,
-      verbose: true,
       detectOpenHandles: true,
-      forceExit: true,
       globalSetup: '<rootDir>/test/e2e/global-setup.js',
       globalTeardown: '<rootDir>/test/e2e/global-teardown.js',
       setupFilesAfterEnv: ['<rootDir>/test/e2e/jest-setup.ts'],
