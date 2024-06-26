@@ -1,5 +1,5 @@
 import request from 'supertest';
-import { app } from '../../../src/index';
+import { app } from '@src/index';
 
 describe('Create Publication Tests', () => {
   it('must be a create publication --success-case', async () => {

@@ -11,12 +11,14 @@ module.exports = {
   verbose: true,
   displayName: 'root-tests',
   transform: {
-    '^.+\\.(ts)$': 'babel-jest',
+    '^.+\\.[t|j]sx?$': 'babel-jest',
   },
   moduleNameMapper: {
-    '@src/(.*)': '<rootDir>/src/$1',
-    '@test/(.*)': '<rootDir>/test/$1',
+    '@src/(.*)$': '<rootDir>/src/$1',
+    '@test/(.*)$': '<rootDir>/test/$1',
   },
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
+  roots: [resolve(__dirname, 'src'), resolve(__dirname, 'test')],
   projects: [
     {
       displayName: 'unit',
