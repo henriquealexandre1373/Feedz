@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { Publication, PublicationSchema } from './createPublicationValidation';
 import { z } from 'zod';
-import { handleZodError } from '../../../errors/handleZodError';
+import { handleZodError } from '@src/errors/handleZodError';
 
 export function createPublication(req: Request, res: Response) {
   try {
